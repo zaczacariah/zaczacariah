@@ -1,4 +1,5 @@
 
+/* CSS Reset */
 * {
     margin:0;
     padding:0;
@@ -7,6 +8,7 @@
     font-style: normal; 
 }
 
+/* CSS Variables */
 :root {
     --red: #E63946;
     --pIvory: #F1FAEE;
@@ -48,7 +50,6 @@ h3 {
     margin:0;
 }
 
-
 ul {
     list-style: none;
 }
@@ -67,6 +68,7 @@ a:hover {
     color: var(--dslate);
 }
 
+/* Nav: Make the nav items stack on top of each other */
 header{
     background-color: var(--midnight-blue);
     padding: 1rem;
@@ -75,10 +77,8 @@ header{
     align-items: center;
     border-bottom: 1px solid var(--red);
 }
-/* q: for mobile, how do I make the nav items stack on top of each other? */
-/* a: flex-direction: column; */
-/* q: the nav items are in an unordered list, how do I make them stack on top of each other? */
 
+/* Nav: Indent the nav items */
 .navName {
     vertical-align: middle;
     margin-left:30px;
@@ -89,6 +89,7 @@ header .headerTitle {
 
 }
 
+/* Nav: Make the nav items stack on top of each other */
 .mainNav {
     display: flex;
     justify-content: center;
@@ -96,6 +97,7 @@ header .headerTitle {
     width: 40%;
 }
 
+/* Hero Section */
 .hero {
     height: fit-content;
     overflow: hidden;
@@ -107,12 +109,15 @@ header .headerTitle {
     padding: 30px;
 }
 
+/* Hero Text: Make the text white, center it, and add a little space between the text and the border */
 .hero h1 {
     color: var(--pIvory);
     font-size: 3rem;
     text-align: center;
     margin-top: 30px;
 }
+
+/* Avatar: Make the avatar a floating circle, add a shadow */
 .avatar{
     background-image: url(../images/Headshot.jpeg);
     background-size: cover;
@@ -124,6 +129,7 @@ header .headerTitle {
  
 }
 
+/* Section: Add a little space between each section, limit the width of each section */
 section{
     width: 100%;
     display: flex;
@@ -135,6 +141,7 @@ section{
 
 }
 
+/* Section: Add a little space between each section, limit the width of each section */
 section>div{
     display: block;
     max-width: 1000px;
@@ -145,6 +152,7 @@ section>div{
 
 }
 
+/* Text: add a little space between the text and the border for each section */
 section>div>h2{
     border-bottom: 1px solid var(--red);
     margin-bottom: 10px;
@@ -154,6 +162,7 @@ section>div>h2{
 
 }
 
+/* Work: Card Container: Make the cards stack on top of each other */
 section>div.work>.cardContainer{
     display: flex;
     flex-direction: row;
@@ -161,6 +170,7 @@ section>div.work>.cardContainer{
     gap:20px 10px;
 }
 
+/* Card Container: Make the cards stack on top of each other */
 .card {
     position: relative;
     display: flex;
@@ -177,11 +187,7 @@ section>div.work>.cardContainer{
     flex-grow:1;
 }
 
-/* q: what is the best way to make the first card take up the whole row? */
-/* a: flex-basis: 100%; */
-/* q: what is the best way to make the cards take up a whole row on mobile? */
-
-
+/* Card Container: Make the cards stack on top of each other */
 .card:nth-child(1){
     flex-grow: 1;
     flex-basis: 100%;
@@ -189,19 +195,21 @@ section>div.work>.cardContainer{
     
 }
 
-
-
+/* Card Hover: Brighten the image, change the cursor */
 .card:hover img{
     filter: brightness(100%);
     cursor: pointer;
 
 }
 
+/* Card Link: Make the whole card clickable */
 .card>a {
     display: contents;
     width: 100%;
     height: 100%;
 }
+
+/* Card Image: Dull the brightness, cover the image*/
 .card img{
     filter:brightness(80%);
     height: 100%;
@@ -220,6 +228,16 @@ section>div.work>.cardContainer{
     transform: translate(-50%, -50%);
 }
 
+.contactDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    gap: 20px;
+    padding: 30px;
+}
+
 
 /* Mobile Responsive @ 710px */
 @media screen and (max-width:710px) {
@@ -231,5 +249,10 @@ section>div.work>.cardContainer{
         flex-basis: 100%;
     }
 
+    .contactDetails{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
 }
