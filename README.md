@@ -1,16 +1,27 @@
-### Hi there 👋
+#ZacZacariah Portfolio
 
-<!--
-**zaczacariah/zaczacariah** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Description
 
-Here are some ideas to get you started:
+The websites services as a portfolio for my web development work. Here you can learn more about me, my work and ways to get in contact!
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I am currently working on basic front end development such as HTML, CSS and Javascript.
+
+## Screenshot
+![alt text](./assets/images/screenshot.png)
+
+## Installation
+
+N/A
+
+## Usage
+
+Use this website as a digital resume for my web development work!
+
+## Credits
+
+N/A
+
+## License
+
+Please refer to the LICENSE in the repo.
+ 
